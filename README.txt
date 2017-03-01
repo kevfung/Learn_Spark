@@ -1,3 +1,8 @@
+Description
+-----------
+
+This is a project used to learn Java Spark framework along with Apahce Velocity Templates. This project uses Gradle for build and dependency management.
+
 Instructions
 ------------
 1) Ensure you have the latest Java Development Kit (JDK 1.8+) installed
