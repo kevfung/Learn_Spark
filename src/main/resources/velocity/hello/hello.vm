@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+	<link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="lead bg-success">
+	Hello $!text
+	</div>
+</body>
+</html>

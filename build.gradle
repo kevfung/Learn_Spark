@@ -1,0 +1,28 @@
+// Apply the java plugin to add support for Java
+apply plugin: "java"
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+jar {
+	manifest {
+		attributes "Main-class": "main.Main"
+	}
+	
+	from {
+    	configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+	}
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    compile "org.slf4j:slf4j-api:1.7.21"
+    
+    compile "com.sparkjava:spark-core:2.5"
+    
+    compile "com.sparkjava:spark-template-velocity:2.5.5"
+
+    testCompile "junit:junit:4.12"
+}
